@@ -1,0 +1,99 @@
+#favorites {
+    width: 1400px;
+    margin: 0px auto;
+    padding: 0 10px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.fav-name {
+    font-family: Comfortaa;
+    font-size: 30px;
+    display: flex;
+    align-items: flex-start;
+    color: var(--bg-light-color);
+    margin-bottom: 30px;
+    opacity: 0;
+}
+
+.fav-name.visible {
+    animation: main 0.7s ease forwards;
+}
+
+.main-fav-products {
+    margin-bottom: 60px;
+    opacity: 0;
+}
+
+.main-fav-products.visible {
+    animation: main 0.7s ease forwards;
+}
+
+.fav-products {
+    display: flex;
+    gap: 30px;
+}
+
+
+
+
+
+
+
+.fav-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto 0;
+    justify-content: center;
+    text-align: center;
+}
+
+.fav-login-name {
+    font-family: Comfortaa;
+    color: var(--bg-light-color);
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.fav-login-title {
+    font-family: Comfortaa;
+    margin-bottom: 20px;
+}
+
+.fav-login-button {
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Comfortaa;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--bg-light-color);
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.fav-login-button:hover {
+    background-color: var(--bg-color);
+}
+
+.recommendation-name {
+    opacity: 0;
+}
+
+.recommendation-name.visible {
+    animation: main 0.7s ease forwards;
+}
+
+.recommendation {
+    opacity: 0;
+}
+
+.recommendation.visible {
+    animation: main 0.8s ease forwards;
+}

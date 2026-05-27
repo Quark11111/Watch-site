@@ -1,0 +1,115 @@
+@font-face {
+    font-family: Comfortaa;
+    font-weight: 500;
+    src: url(./fonts/TenorSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: Comfortaa;
+    font-weight: 700;
+    src: url(./fonts/Comfortaa-Bold.ttf);
+}
+
+@font-face {
+    font-family: Comfortaa;
+    font-weight: 600;
+    src: url(./fonts/Comfortaa-SemiBold.ttf);
+}
+
+
+@font-face {
+    font-family: RG;
+    font-weight: 400;
+    src: url(./fonts/RomauntGaolines.ttf);
+}
+
+
+@font-face {
+    font-family: Gogh;
+    font-weight: 700;
+    src: url(./fonts/Gogh-ExtraBold.otf);
+}
+
+
+:root {
+    --bg-color: #432818;
+    --text-color: #edf2f4;
+    --bg-light-color: #99582a;
+    --border-product-color: #dee2e6;
+    --bg-main-color: #f4f9e9;
+    --img-bg-color: #f8f9fa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.app-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes main {
+    from {
+        transform:translateY(100px);
+        opacity: 0;
+    }
+
+    to {
+        transform:translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes news-title {
+    from {
+        transform:translateY(60px) ;
+        opacity: 0;
+    }
+
+    to {
+        transform:translateY(0px) ;
+        opacity: 1;
+    }
+    
+}
+
+@keyframes news-title {
+    from {
+        transform:translateY(60px) ;
+        opacity: 0;
+    }
+
+    to {
+        transform:translateY(0px) ;
+        opacity: 1;
+    }
+    
+}
+
+
+@keyframes rec {
+    from {
+        margin-top: 140px;
+        opacity: 0;
+    }
+
+    to {
+        margin-top: 70px;
+        opacity: 1;
+    }
+}

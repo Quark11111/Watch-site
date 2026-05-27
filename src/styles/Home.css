@@ -1,0 +1,281 @@
+#main {
+    max-width: 1400px;
+    margin: 0 auto 50px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-news img {
+    width: 1400px;
+    height: 700px;
+    object-fit: cover;
+}
+.dark {
+    width: 1400px;
+    height: 700px;
+    background-color: black;
+    margin-bottom: -700px;
+    opacity: 0.4;
+}
+.main-news {
+    opacity: 0;
+}
+
+.main-news.visible {
+    animation: main 0.6s ease forwards;
+}
+
+.catalog-button {
+    position: absolute;
+    margin-top: 450px;
+    width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: center; 
+    text-align: center;
+    align-items: center;  
+    text-decoration: none;
+    margin-left: 10px;
+    background-color: var(--bg-light-color);
+    color: var(--text-color);
+    z-index: 1;
+    font-family: Comfortaa;
+    font-size: 22px;  
+    opacity: 0;
+}
+
+.catalog-button.visible {
+    animation: news-title 0.6s ease forwards;
+}
+
+.news-1 {
+    margin-top: 250px;
+    max-width: 700px;
+    font-size: 52px;
+    margin-left: 10px;
+    font-weight: 500;
+    color: var(--text-color);
+    position: absolute;
+    font-family: Comfortaa;
+    z-index: 1;
+    background-color: transparent;
+    animation-delay: 0.3s;
+    opacity: 0;
+}
+
+.news-1.visible {
+    animation: news-title 0.6s ease forwards;
+}
+
+.name-rec {
+    font-family: Gogh;
+    font-size: 40px;
+    margin: 70px 0 20px 0;
+    color: var(--bg-light-color);
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    opacity: 0;
+}
+
+.name-rec.visible {
+    animation: main 0.7s ease forwards;
+}
+
+.recommendation {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    overflow: auto;
+    margin-bottom: 70px;
+}
+
+.recommendation::-webkit-scrollbar {
+    display: none;
+}
+
+.watch-products {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 400px;
+}
+
+.product-link {
+    text-decoration: none;
+    color: var(--bg-color);
+    opacity: 0;
+
+}
+
+.product-link.visible {
+    animation: main 0.7s ease forwards;
+}
+
+.products-img img {
+    border: 1px solid var(--border-product-color);
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    background-color: #f8f9fa;
+}
+
+
+.products-name {
+    font-family: RG;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.products-title {
+    font-family: 'Times New Roman';
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.products-price {
+    font-family: 'Times New Roman';
+
+}
+
+.about-home {
+    margin: 30px 0 90px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    align-items: center;
+    font-family: Comfortaa;
+}
+
+.name-about {
+    font-family: Gogh;
+    font-size: 40px;
+    color: var(--bg-light-color);
+    font-weight: 700;
+    margin: 50px 0 10px 0;
+    opacity: 0;
+}
+
+.name-about.visible {
+    animation: main 0.7s ease forwards;
+}
+
+.about-info {
+    display: flex;
+    width: 860px;
+    word-spacing: 20px;
+    line-height: 1.5;
+    font-weight: 500;
+    text-align: justify;
+    opacity: 0;
+}
+.about-info.visible {
+    animation: main 0.7s ease forwards;
+}
+
+
+.section-brand {
+    font-family: Gogh;
+    font-size: 40px;
+    color: var(--bg-light-color);
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    opacity: 0;
+}
+
+.section-brand.visible {
+    animation: main 0.7s ease forwards;
+}
+
+.brands {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:20px;
+    opacity: 0;
+}
+
+.brands.visible {
+    animation: main 0.7s ease forwards;
+}
+
+.brands-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 400px;
+    gap: 10px;
+    align-items: center;
+}
+
+.brands-name {
+    color: var(--bg-light-color);
+    font-family: RG;
+    font-size: 40px;
+}
+
+.brands-title {
+    font-family: Comfortaa;
+    width: 300px;
+    height: 100px;
+    overflow: auto;
+    text-align: justify;
+}
+
+.brands-title::-webkit-scrollbar {
+    display: none;
+}
+
+
+.line {    
+    width: 400px;
+    height: 0.5px;
+    margin: 0;
+    background-color: var(--bg-light-color);
+}
+
+.line1 {   
+    width: 400px;
+    height: 0.5px;
+    margin: 0;
+}
+
+.wheat {
+    display: flex;
+    justify-content: center;
+
+}
+
+.wheat1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+
+}
+
+.whean2 {
+    transform: scaleX(1);
+    color: var(--bg-light-color);
+}
+
+.whean1 {
+    transform: scaleX(-1);
+    color: var(--bg-light-color);
+}
+
+.whean3 {
+    transform: scaleY(-1);
+    color: var(--bg-light-color);
+}
+
+.whean4 {
+    transform: scaleX(-1);
+    transform: rotate(180deg);
+    color: var(--bg-light-color);
+}
+

@@ -1,0 +1,69 @@
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 90vh;
+    width: 100%;
+}
+
+.login {
+    padding: 30px; 
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: min-content;
+    border: 1px solid var(--bg-light-color);
+    border-radius: 30px;
+}
+
+.login-name {
+    font-family: Comfortaa;
+    font-size: 36px;
+    color: var(--bg-light-color);
+}
+
+.login input {
+    width: 300px;
+    height: 40px;
+    font-size: 18px;
+    font-family: Comfortaa;
+    padding-left: 5px;
+    border: 2px solid var(--border-product-color);
+    border-radius: 10px;
+}
+
+.login-from-login {
+    width: 190px;
+    border-radius: 10px;
+    font-family: Comfortaa;
+    font-size: 16px;
+    background-color: var(--bg-light-color);
+    color: var(--text-color);
+    border: 1px solid var(--bg-light-color);
+    height: 40px;
+    cursor: pointer;
+}
+
+.register-from-login-div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    font-family: Comfortaa;
+}
+
+.register-from-login {
+    font-family: Comfortaa;
+    font-size: 16px;
+    border: none;
+    color: var(--bg-light-color);
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    width: max-content;
+    cursor: pointer;
+}

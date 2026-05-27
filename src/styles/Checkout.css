@@ -1,0 +1,169 @@
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-box {
+    background: white;
+    border-radius: 12px;
+    padding: 40px;
+    width: 580px;
+    max-width: 90vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #666;
+}
+
+.modal-title {
+    font-family: RG;
+    font-size: 24px;
+    color: var(--bg-color);
+}
+
+.modal-product {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.modal-product img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border: 1px solid var(--border-product-color);
+    border-radius: 8px;
+    background: var(--img-bg-color);
+}
+
+.modal-product-name {
+    font-family: RG;
+    font-size: 18px;
+}
+
+.modal-product-title {
+    font-family: Comfortaa;
+    font-size: 14px;
+    color: #666;
+}
+
+.modal-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-top: 1px solid var(--border-product-color);
+    padding-top: 16px;
+}
+
+.modal-info-row {
+    display: flex;
+    justify-content: space-between;
+    font-family: Comfortaa;
+    font-size: 14px;
+    color: #444;
+}
+
+.modal-info-row.total {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--bg-light-color);
+    border-top: 1px solid var(--border-product-color);
+    padding-top: 12px;
+}
+
+.modal-btn {
+    background-color: var(--bg-light-color);
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-family: Comfortaa;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+.modal-btn:hover {
+    background-color: var(--bg-color);
+}
+
+
+.card-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.card-field label {
+    font-family: Comfortaa;
+    font-size: 13px;
+    color: #666;
+}
+
+.card-field input {
+    padding: 10px 14px;
+    border: 1px solid var(--border-product-color);
+    border-radius: 8px;
+    font-family: Comfortaa;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.2s;
+}
+
+.card-field input:focus {
+    border-color: var(--bg-light-color);
+}
+
+.card-field-row {
+    display: flex;
+    gap: 16px;
+}
+
+.card-field-row .card-field {
+    flex: 1;
+}
+
+.modal-btns {
+    display: flex;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.modal-btn-back {
+    flex: 1;
+    padding: 14px;
+    border: 1px solid var(--border-product-color);
+    border-radius: 8px;
+    background: white;
+    font-family: Comfortaa;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.modal-btn-back:hover {
+    background: #f5f5f5;
+}

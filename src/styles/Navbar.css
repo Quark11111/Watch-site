@@ -1,0 +1,29 @@
+nav {
+    width: 1400px;
+    margin: 0 auto;    
+    padding: 0 10px;
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    color: var(--bg-light-color);
+    align-items: center;
+}
+
+.navigation  {
+    display: flex;
+    gap: 50px;
+    font-size: 18px;
+    font-family: Comfortaa;
+}
+
+.nav-contact {
+    display: flex;
+    gap: 50px;
+    font-size: 18px;
+    font-family: Comfortaa;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--bg-light-color);
+}

@@ -1,0 +1,39 @@
+header {
+    width: 1400px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+}
+
+.logo {
+    font-family: RG;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--bg-light-color);
+}
+
+.main-header {
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+}
+
+
+
+.bag-profile {
+    display: flex;
+    gap: 10px;
+}
+
+.bag-button, .profile-button {
+    width: 40px;
+    height: 40px;
+    border: 1px solid;
+    color: var(--bg-light-color);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

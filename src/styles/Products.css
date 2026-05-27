@@ -1,0 +1,150 @@
+#catalog {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0px auto;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.catalog {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    align-items: start;
+    gap: 30px;
+    height: 100%;
+}
+
+
+
+.products {
+    display: flex;
+    flex: 1;
+    gap: 0px 40px; 
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    opacity: 0;
+}
+
+.products.visible {
+    animation: main 0.7s ease forwards;
+}
+
+.product-card {
+    width: 230px;
+    height: auto;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    transition: all 0.4s ease-in-out;
+}
+
+
+.product-card img {
+    width: 230px;
+    object-fit: contain;
+    height: 230px;
+    border:1px solid var(--border-product-color);
+    background-color: var(--img-bg-color);
+}
+
+.product-name {
+    font-family: RG;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product-title {
+    font-family: Comfortaa;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.product-price{
+    font-family: Comfortaa;
+}
+
+.catalog-name {
+    display: flex;
+    font-family: Comfortaa;
+    font-size: 40px;
+    font-weight: 600;
+    margin: 10px auto;
+    color: var(--bg-light-color);
+    opacity: 0;
+}
+
+.catalog-name.visible {
+    animation: main 0.8s ease forwards;
+}
+
+
+
+.filter {
+    display: flex;
+    font-family: Comfortaa;
+    font-size: 26px;
+    font-weight: 400;
+    margin: 10px auto;
+    color: var(--bg-light-color);
+}
+
+.aside-catalog-filter {
+    display: flex;
+    flex-direction: column;
+    max-width: 280px;
+    align-items: flex-start;
+    opacity: 0;
+}
+
+.aside-catalog-filter.visible {
+    animation: main 0.8s ease forwards;
+}
+
+.filter-price {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.min-price, .max-price {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.min-price input, .max-price input {
+    width: 130px;
+    height: 30px;
+    outline: none;
+    border: 1px solid var(--bg-light-color);
+    border-radius: 5px;
+}
+
+.filter-brands, .filter-mech, .filter-gen, .filter-diameter, .filter-material {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.filter-brand-name, .filter-diameter-name, .filter-gen-name, .filter-material-name, .filter-mech-name {
+    font-family: Comfortaa;
+    font-size: 20px;
+    color: var(--bg-light-color);
+    margin-bottom: 5px;
+}
+
+.filter-brands label, .filter-mech label,.filter-gen label, .filter-diameter label, .filter-material label {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.filter-brands span, .filter-mech span,.filter-gen span, .filter-diameter span, .filter-material span{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}

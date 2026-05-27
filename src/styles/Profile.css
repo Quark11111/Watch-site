@@ -1,0 +1,247 @@
+#profile {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto 40px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: flex-start;
+}
+
+.profile-name {
+    font-family: Comfortaa;
+    font-size: 36px;
+    display: flex;
+    margin: 10px 0;
+    color: var(--bg-light-color);
+    opacity: 0;
+}
+
+.profile-name.visible {
+    animation: main 0.7s ease forwards;
+}
+
+
+.info-order {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 20px;
+}
+
+.profile-email {
+    font-family: Comfortaa;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--bg-light-color);
+}
+
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--bg-light-color);
+    border-radius: 6px;
+    height: min-content;
+    padding: 10px;
+    opacity: 0;
+}
+
+.profile-info.visible {
+    animation: main 0.7s ease forwards;
+}
+
+.information-label {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.name-label, .last-label, .phone-label, .adrress-label {
+    display: flex;
+    justify-content: space-between;
+    font-family: Comfortaa;
+    align-items: center;
+    color: var(--bg-light-color);
+}
+
+.name-label input, .last-label input, .phone-label input, .adrress-label input {
+    width: 150px;
+    height: 30px;
+    border: 1px solid var(--bg-light-color);
+    padding-left: 5px;
+    border-radius: 4px;
+    outline: none;
+}
+
+.info-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.info-btn button{
+    width: 200px;
+    height: 40px;
+    outline: none;
+    border: none;
+    color: var(--text-color);
+    font-family: Comfortaa;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: var(--bg-light-color);
+    cursor: pointer;
+}
+
+.info-btn button:hover {
+    background-color: var(--bg-color);
+}
+
+.logout-btn {
+    margin: 50px 0 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.logout-btn button {
+    width: 150px;
+    height: 40px;
+    border:1px solid var(--bg-light-color);
+    background-color: transparent;
+    border-radius: 6px;
+    color: var(--bg-light-color);
+    cursor: pointer;
+    font-family: Comfortaa;
+    font-size: 16px;
+}
+
+.logout-btn button:hover {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+
+
+
+
+
+
+.my-orders {
+    padding: 10px;
+    border:1px solid var(--bg-light-color);
+    border-radius: 6px;
+    opacity: 0;
+}
+
+.my-orders.visible {
+    animation: main 0.7s ease forwards;
+}
+
+.my-orders-name {
+    font-family: Comfortaa;
+    margin: 0 0 20px;
+    font-size: 30px;
+    color: var(--bg-light-color);
+}
+
+.order {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    gap: 0 40px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    opacity: 0;
+}
+
+.order.visible {
+    animation: main 0.7s ease forwards;
+}
+
+.order-card {
+    width: 220px;
+    height: auto;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    transition: all 0.4s ease-in-out;
+}
+
+
+.order-card img {
+    width: 220px;
+    object-fit: contain;
+    height: 220px;
+    border:1px solid var(--border-product-color);
+    background-color: var(--img-bg-color);
+}
+
+.order-name {
+    font-family: RG;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.order-price{
+    font-family: Comfortaa;
+}
+
+.track-code {
+    font-family: Comfortaa;
+    margin: 6px 0;
+}
+
+
+
+
+.login-register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1400px;
+    margin: 0 auto;
+    padding: 0 10px;
+    height: 60vh;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.button-list {
+    display: flex;
+    gap: 30px;
+}
+
+.voit {
+    font-family: Comfortaa;
+    font-size: 30px;
+    color: var(--bg-light-color);
+}
+
+
+.login-profile button {
+    width: 220px;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: var(--bg-light-color);
+    color: var(--text-color);
+    font-family: Comfortaa;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.register-profile button {
+    width: 220px;
+    height: 45px;
+    border: 1px solid var(--bg-light-color);
+    border-radius: 10px;
+    background-color: transparent;
+    font-family: Comfortaa;
+    font-size: 18px;
+    cursor: pointer;
+    color: var(--bg-light-color);
+    
+}
