@@ -281,9 +281,9 @@
 
 
 
-@media (max-width: 786px) {
+@media (max-width: 480px) {
     #main {
-        max-width: 786px;
+        max-width: 480px;
         margin: 0 auto ;
         padding: 0 10px;
     }
@@ -311,20 +311,31 @@
         height: 35px;
         font-size: 16px;
     }
-    
+    .name-rec {
+        font-size: 26px;
+    }
+
     .watch-products {
-        width: 200px;
+        width: 150px;
         height: 300px;
     }
 
     .products-img img {
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .name-about {
+        font-size: 26px;
     }
 
     .about-info {
-        width: 600px;
+        width: 400px;
         word-spacing: 20px;
+    }
+
+    .section-brand {
+        font-size: 26px;
     }
 
     .brands {

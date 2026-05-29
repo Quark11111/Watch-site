@@ -43,13 +43,13 @@ header {
 }
 
 
-@media (max-width: 786px) {
+@media (max-width: 480px) {
     header {
         height: 100px;
     }
 
     .main-header {
-        max-width: 786px;
+        max-width: 480px;
         display: flex;
         flex-direction: column;
         text-align: center;
