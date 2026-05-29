@@ -20,7 +20,11 @@ header {
     justify-content: space-between;
 }
 
-
+.search-bag-profile {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
 
 .bag-profile {
     display: flex;

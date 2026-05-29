@@ -13,6 +13,7 @@
 .search-input-wreapper {
     display: flex;
     gap: 15px;
+    background-color: #f8f9fa;
 }
 
 .search-input {

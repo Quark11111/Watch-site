@@ -7,12 +7,12 @@
 }
 
 .main-news img {
-    width: 1400px;
+    width: 1380px;
     height: 700px;
     object-fit: cover;
 }
 .dark {
-    width: 1400px;
+    width: 1380px;
     height: 700px;
     background-color: black;
     margin-bottom: -700px;
