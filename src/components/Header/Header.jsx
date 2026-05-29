@@ -16,11 +16,13 @@ const Header = () =>  {
             <div className='logo'>
                 APEX TIME
             </div>
+            <div className='search-bag-profile'>
             <SearchBar />
             <ul className='bag-profile'>
                 <Link className='bag-button' to='/favorites'><FontAwesomeIcon icon={faCartShopping}/></Link>
                 <Link className='profile-button' to='/profile'><FontAwesomeIcon icon={faCircleUser}/></Link>
             </ul>
+            </div>
         </div>
         </header>
     )

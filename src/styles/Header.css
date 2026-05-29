@@ -37,3 +37,23 @@ header {
     justify-content: center;
     align-items: center;
 }
+
+
+@media (max-width: 786px) {
+    header {
+        height: 100px;
+    }
+
+    .main-header {
+        max-width: 786px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .search-bag-profile {
+        display: flex;
+        gap: 10px;
+    }
+
+}
