@@ -34,6 +34,8 @@ const Products = () => {
     const [selectedDiameter, setSelectedDiameter] = useState([])
     const [selectedMaterial, setSelectedMaterial] = useState([])
 
+    const [isOpen, setIsOpen] = useState(false)
+
     const [filteredProducts, setFilteredProducts] = useState([])
     const [minPrice, setMinPrice] = useState('')
     const [maxPrice, setMaxPrice] = useState('')
@@ -158,7 +160,11 @@ const Products = () => {
         <section id='catalog'>
             <AnimateDiv className='catalog-name'>Каталог</AnimateDiv>
                 <section className='catalog'>
-                    <AnimateDiv className="aside-catalog-filter" delay={600}>
+                    <button className={`filter-button ${isOpen ? 'open' : ''}`} onClick={() => setIsOpen(!isOpen)}><span>Фильтры</span></button>
+                    {isOpen && (
+                        <div className='filter-overlay' onClick={() => setIsOpen(false)}></div>
+                    )}
+                    <div className={`aside-catalog-filter ${isOpen ? 'open' : ''}`} delay={600}>
                         <div className='filter'>Фильтры</div>
 
 
@@ -225,7 +231,7 @@ const Products = () => {
                             ))}
                         </div>
 
-                    </AnimateDiv>
+                    </div>
                     <AnimateDiv className='products' delay={1200}>
                         {filteredProducts.map((product) => (
                             <Link className='product-card' to={`/products/${product.id}`} key={product.id}>

@@ -43,21 +43,22 @@ header {
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 420px) {
     header {
         height: 100px;
     }
 
     .main-header {
-        max-width: 480px;
+        max-width: 420px;
         display: flex;
         flex-direction: column;
         text-align: center;
     }
     
     .search-bag-profile {
+        width: 400px;
         display: flex;
-        gap: 10px;
+        justify-content: space-between;
     }
 
 }

@@ -281,10 +281,10 @@
 
 
 
-@media (max-width: 480px) {
+@media (max-width: 420px) {
     #main {
-        max-width: 480px;
-        margin: 0 auto ;
+        max-width: 100%;
+        margin: 0 auto;
         padding: 0 10px;
     }
 
@@ -330,7 +330,7 @@
     }
 
     .about-info {
-        width: 400px;
+        width: 320px;
         word-spacing: 20px;
     }
 

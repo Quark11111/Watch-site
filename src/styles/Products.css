@@ -105,6 +105,14 @@
     animation: main 0.8s ease forwards;
 }
 
+.filter-button {
+    display: none;
+}
+
+.filter-overlay {
+    display: none;
+}
+
 .filter-price {
     display: flex;
     gap: 10px;
@@ -147,4 +155,67 @@
 .filter-brands span, .filter-mech span,.filter-gen span, .filter-diameter span, .filter-material span{
     font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
+}
+
+
+@media (max-width: 420px) {
+    .catalog {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .filter-button {
+        display: block;
+        background: none;
+        border: 1px solid var(--bg-light-color);
+        color: var(--bg-light-color);
+        font-family: Comfortaa;
+        font-size: 16px;
+        padding: 8px 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-bottom: 10px;
+        width: fit-content;
+    }
+
+    .aside-catalog-filter {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 300px;
+        height: 100vh;
+        background: white;
+        z-index: 1000;
+        overflow-y: auto;
+        padding: 5px;
+        transition: left 0.3s ease;
+        display: flex !important;
+        opacity: 1 !important;
+        box-shadow: 4px 0 20px rgba(0,0,0,0.2);
+    }
+
+    .aside-catalog-filter.open {
+        left: 0;
+    }
+
+    .product-card {
+        width: 150px;
+    }
+
+    .products {
+        justify-content: center;
+    }
+
+    .product-card img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .filter-overlay {
+        display: block;
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.5);
+        z-index: 999;
+    }
 }

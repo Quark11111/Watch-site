@@ -1,11 +1,10 @@
-/* Сам тег footer */
+
 footer {
     width: 100%;
     background-color: #ffff;
-    margin-top: auto;  /* Главное свойство — прижимает к низу */
+    margin-top: auto;
 }
 
-/* Контент внутри футера */
 .footer {
     display: flex;
     justify-content: space-between;
@@ -63,3 +62,10 @@ footer {
     color: var(--bg-light-color);
 }
 
+@media (max-width: 420px) {
+    .footer {
+        flex-direction: column;
+        padding: 20px;
+        gap: 40px;
+    }
+}

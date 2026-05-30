@@ -101,7 +101,7 @@
     color: var(--bg-light-color);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 420px) {
 
     #navigation {
         width: 100%;
@@ -110,7 +110,7 @@
     }
 
     .search-input {
-        width: 300px;
+        width: 230px;
     }
 
     .searсh-container {
