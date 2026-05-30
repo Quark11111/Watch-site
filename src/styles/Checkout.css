@@ -146,7 +146,7 @@
     flex: 1;
 }
 
-@media (max-width: 420px ) {
+@media (max-width: 480px ) {
     .card-field-row .card-field {
         width: 100px;
     }

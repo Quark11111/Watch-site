@@ -247,11 +247,12 @@
     
 }
 
-@media (max-width: 420px) {
+@media (max-width: 430px) {
     #profile {
         width: 100%;
         display: flex;
         flex-direction: column;
+        padding: 0 10px;
     }
 
     .my-orders {
@@ -259,7 +260,7 @@
     }
 
     .information-label {
-        width: 380px;
+        width: 100%;
         display: flex;
         justify-content: space-between;
     }
@@ -270,6 +271,7 @@
     }
 
     .info-order {
+        width: 100%;
         display: flex;
         flex-direction: column;
     }

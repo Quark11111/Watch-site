@@ -158,7 +158,7 @@
 }
 
 
-@media (max-width: 420px) {
+@media (max-width: 480px) {
     .catalog {
         display: flex;
         flex-direction: column;

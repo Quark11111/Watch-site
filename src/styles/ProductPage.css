@@ -207,7 +207,7 @@
     animation: main 0.7s ease forwards;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 480px) {
     #product-page {
         width: 100%;
     }
