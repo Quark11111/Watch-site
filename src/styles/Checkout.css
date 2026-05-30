@@ -146,6 +146,12 @@
     flex: 1;
 }
 
+@media (max-width: 420px ) {
+    .card-field-row .card-field {
+        width: 100px;
+    }
+}
+
 .modal-btns {
     display: flex;
     gap: 12px;
