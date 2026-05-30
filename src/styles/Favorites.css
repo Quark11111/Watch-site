@@ -50,6 +50,14 @@
     text-align: center;
 }
 
+.fav-null {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        font-family: Comfortaa;
+        color: var(--border-product-color);
+    }
+
 .fav-login-name {
     font-family: Comfortaa;
     color: var(--bg-light-color);
@@ -96,4 +104,30 @@
 
 .recommendation.visible {
     animation: main 0.8s ease forwards;
+}
+
+
+@media (max-width: 420px) {
+    #favorites {
+        width: 100%;
+    }
+
+    .fav-name {
+        display: flex;
+        justify-content: center;
+        font-size: 26px;
+    }
+
+    .fav-products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .fav-null {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        font-family: Comfortaa;
+        color: var(--border-product-color);
+    }
 }

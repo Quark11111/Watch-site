@@ -148,7 +148,7 @@ const Profile = () => {
                 <div className='my-orders-name'>Мои заказы</div>
 
                 {orders.length === 0 ? (
-                    <div></div>
+                    <div className='fav-null'>У вас пока нету заказанных товаров</div>
                 ) : (
                     <AnimateDiv className='order'>
                         {orders.map(order => (

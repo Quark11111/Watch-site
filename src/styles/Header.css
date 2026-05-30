@@ -47,7 +47,9 @@ header {
     header {
         height: 100px;
     }
-
+    .logo {
+        margin-bottom: 10px;
+    }
     .main-header {
         max-width: 420px;
         display: flex;

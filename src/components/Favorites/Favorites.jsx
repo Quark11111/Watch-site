@@ -89,7 +89,7 @@ const Favorites = () => {
             <AnimateDiv className='fav-name'>Избранные товары: {favorites.length}</AnimateDiv>
             <div>
             {favorites.length === 0 ? (
-                <p>Ваш список избранного пока пуст.</p>
+                <p className='fav-null'>Ваш список избранного пока пуст.</p>
             ) : (
                 <AnimateDiv className='main-fav-products' delay={800}>
                 <div className='fav-products'>
