@@ -62,7 +62,7 @@ footer {
     color: var(--bg-light-color);
 }
 
-@media (max-width: 420px) {
+@media (max-width: 480px) {
     .footer {
         flex-direction: column;
         padding: 20px;
